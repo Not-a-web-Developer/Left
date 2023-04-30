@@ -64,6 +64,7 @@
       left.controller.add('default', 'Select', 'Select Autocomplete', () => { left.select_autocomplete() }, 'Tab')
       left.controller.add('default', 'Select', 'Select Synonym', () => { left.select_synonym() }, 'Shift+Tab')
       left.controller.add('default', 'Select', 'Find', () => { left.operator.start('find: ') }, 'CmdOrCtrl+F')
+      left.controller.add('default', 'View', 'Toggle Menubar', () => { app.toggleMenubar() }, 'F11')
       left.controller.add('default', 'Select', 'Replace', () => { left.operator.start('replace: a -> b') }, 'CmdOrCtrl+Shift+F')
       left.controller.add('default', 'Select', 'Goto', () => { left.operator.start('goto: ') }, 'CmdOrCtrl+G')
       left.controller.add('default', 'Select', 'Open Url', () => { left.open_url() }, 'CmdOrCtrl+B')
