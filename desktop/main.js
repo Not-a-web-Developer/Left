@@ -11,16 +11,16 @@ app.win = null
 
 app.on('ready', () => {
   app.win = new BrowserWindow({
-    width: 780,
-    height: 462,
+    width: 800,
+    height: 540,
     minWidth: 380,
     minHeight: 360,
     backgroundColor: '#000',
     icon: path.join(__dirname, { darwin: 'icon.icns', linux: 'icon.png', win32: 'icon.ico' }[process.platform] || 'icon.ico'),
     resizable: true,
-    frame: process.platform !== 'darwin', // process.platform !== 'darwin'
+    frame: false, // process.platform !== 'darwin'
     skipTaskbar: process.platform === 'darwin',
-    autoHideMenuBar: process.platform === 'darwin',
+    autoHideMenuBar: true,
     webPreferences: { zoomFactor: 1.0, nodeIntegration: true, backgroundThrottling: false }
   })
 
